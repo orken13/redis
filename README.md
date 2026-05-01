@@ -18,7 +18,7 @@ pip3 install redis --break-system-packages
 
 ## Files
 
-### `redis_demo.py` — Core Data Types
+### `main.py` — Core Data Types
 
 Covers the 5 essential Redis structures.
 
@@ -36,7 +36,7 @@ python3 redis_demo.py
 
 ---
 
-### `pipeline_demo.py` — Pipeline
+### `pipeline.py` — Pipeline
 
 By default, every Redis command makes a separate network round-trip. With a pipeline, commands are sent in bulk — significantly faster.
 
@@ -87,8 +87,8 @@ python3 app.py
 ## Summary
 
 ```
-redis_demo.py      → String, Hash, List, Sorted Set, Rate Limiting
-pipeline_demo.py   → Bulk command execution (performance optimization)
+main.py      → String, Hash, List, Sorted Set, Rate Limiting
+pipeline.py   → Bulk command execution (performance optimization)
 subscriber.py      → Channel listener
 publisher.py       → Channel publisher
 redis_client.py    → Singleton + Connection Pool setup
